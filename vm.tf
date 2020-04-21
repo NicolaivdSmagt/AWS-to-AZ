@@ -40,7 +40,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
     username   = "ubuntu"
     # IMPORTANT
     # Add here your own public SSH key, so we can access the VM
-    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCMo8bcEaghQIyEk+83TG/d2ocNLiq+tbxNw45IOuzU9rrv6lzyKz0IcVKSrApD2w58UoPhWp1ddGn24VC2wwnIIo4Oh8dWmb28ZgLFiEddhAfHkZ2BvFQMM4aixwaM4RHblXXTja3I5vcsfzm4gAyVAaY2/DWuVfbHq+RxAv+gHBZEKL5j+xxrc8he+e6iBG7yBBfHaPKQAtMrBOIhfllBIv1YPWXH8JLHZs1dYZpYLQzQkI+yIZyRaHmyJWtjAu/ghFHgE+gqK1GxFNZRS8kft7zO8YK+IcIZxBoin9PynqUWk+rZCQfYnX/xZEeUFjqhBINVFkQ01WzRQWO7z3cn"
+    public_key = ""
   }
 
   source_image_reference {
@@ -86,7 +86,7 @@ resource "aws_key_pair" "ssh_key" {
   key_name   = "ssh_key"
   # IMPORTANT
   # Add here your own public SSH key, so we can access the VM
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCMo8bcEaghQIyEk+83TG/d2ocNLiq+tbxNw45IOuzU9rrv6lzyKz0IcVKSrApD2w58UoPhWp1ddGn24VC2wwnIIo4Oh8dWmb28ZgLFiEddhAfHkZ2BvFQMM4aixwaM4RHblXXTja3I5vcsfzm4gAyVAaY2/DWuVfbHq+RxAv+gHBZEKL5j+xxrc8he+e6iBG7yBBfHaPKQAtMrBOIhfllBIv1YPWXH8JLHZs1dYZpYLQzQkI+yIZyRaHmyJWtjAu/ghFHgE+gqK1GxFNZRS8kft7zO8YK+IcIZxBoin9PynqUWk+rZCQfYnX/xZEeUFjqhBINVFkQ01WzRQWO7z3cn"
+  public_key = ""
 }
 
 resource "aws_instance" "vm" {

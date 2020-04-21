@@ -5,10 +5,10 @@ provider "azurerm" {
   # IMPORTANT!
   # For simplicity, we are not setting up "proper" access through environment variables
   # Insert your access credentials here
-  subscription_id = "e2f99cd3-5285-43ae-a85f-9964ebcf86f2"
-#  tenant_id       = "e2f99cd3-5285-43ae-a85f-9964ebcf86f2"
-#  client_secret   = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-#  client_id       = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+  subscription_id = ""
+  tenant_id       = ""
+  client_secret   = ""
+  client_id       = ""
 }
 
 # And not configuring a Terraform remote state
